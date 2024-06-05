@@ -5,7 +5,7 @@ const Contact = () => {
 
     const [state, handleSubmit] = useForm("mbjejgrr");
     if (state.succeeded) {
-        return <p>Thanks for Contact US!</p>;
+        return <h1>Thanks for Contact US!</h1>;
     }
 
     return (
@@ -100,9 +100,6 @@ const Contact = () => {
                                 method='POST'
                             >
                                 <div className="flex flex-col">
-                                    {/* <label for="name" className="hidden">
-                                        Full Name
-                                    </label> */}
                                     <input
                                         type="name"
                                         name="name"
@@ -119,9 +116,6 @@ const Contact = () => {
                                 </div>
 
                                 <div className="flex flex-col mt-2">
-                                    {/* <label for="email" className="hidden">
-                                        Email
-                                    </label> */}
                                     <input
                                         type="email"
                                         name="email"
@@ -138,28 +132,18 @@ const Contact = () => {
                                 </div>
 
                                 <div className="flex flex-col mt-2">
-                                    {/* <label for="tel" className="hidden">
-                                        Number
-                                    </label> */}
                                     <textarea
-                                        name=""
-                                        id=""
+                                        name="Message"
+                                        id="Message"
                                         required
                                         placeholder="Enter Your Message"
                                         className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
                                     />
                                     <ValidationError
                                         prefix="Message"
-                                        field="message"
+                                        field="Message"
                                         errors={state.errors}
                                     />
-                                    {/* <input
-                                        type="tel"
-                                        name="tel"
-                                        id="tel"
-                                        placeholder="Telephone Number"
-                                        className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
-                                    /> */}
                                 </div>
 
                                 <button
