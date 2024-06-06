@@ -40,7 +40,7 @@ const GetStarted = () => {
                                 })}
                                 type="text"
                                 required
-                                className="block border border-grey-light w-full p-3 rounded mb-4 focus:border-orange-500 focus:outline-none"
+                                className="bg-gray-50 block border border-grey-light w-full p-3 rounded mb-4 focus:border-orange-500 focus:outline-none"
                                 name="Name"
                                 placeholder="Full Name" />
 
@@ -52,7 +52,7 @@ const GetStarted = () => {
                                 type="email"
                                 value={input.Email}
                                 required
-                                className="block border border-grey-light w-full p-3 rounded mb-4 focus:border-orange-500 focus:outline-none"
+                                className="bg-gray-50 block border border-grey-light w-full p-3 rounded mb-4 focus:border-orange-500 focus:outline-none"
                                 name="Email"
                                 placeholder="Email" />
 
@@ -64,7 +64,7 @@ const GetStarted = () => {
                                 value={input.Pass}
                                 type="password"
                                 required
-                                className="block border border-grey-light w-full p-3 rounded mb-4 focus:border-orange-500 focus:outline-none"
+                                className="bg-gray-50 block border border-grey-light w-full p-3 rounded mb-4 focus:border-orange-500 focus:outline-none"
                                 name="Pass"
                                 placeholder="Password" />
                             <input
@@ -76,7 +76,7 @@ const GetStarted = () => {
                                 type="password"
                                 id='conPass'
                                 required
-                                className="block border border-grey-light w-full p-3 rounded mb-4 focus:border-orange-500 focus:outline-none"
+                                className="bg-gray-50 block border border-grey-light w-full p-3 rounded mb-4 focus:border-orange-500 focus:outline-none"
                                 name="conPass"
                                 placeholder="Confirm Password" />
 
@@ -88,15 +88,14 @@ const GetStarted = () => {
 
                         <div className="text-center text-sm text-grey-dark mt-4">
                             By signing up, you agree to the
-                            <p className='no-underline border-b border-grey-dark text-grey-dark'>Terms of Service and Privacy Policy</p>
+                            <p className='text-grey-dark'>Terms of Service and Privacy Policy</p>
                         </div>
-                    </div>
-
-                    <div className="text-grey-dark mt-6">
-                        Already have an account?
-                        <NavLink className="text-gray-800 hover:bg-gray-100  font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 " to="/login">
-                            Log in
-                        </NavLink>
+                        <div className="text-grey-dark mt-6">
+                            Already have an account?
+                            <NavLink className="font-medium text-primary-600 hover:underline dark:text-primary-500 px-2" to="/login">
+                                Log in
+                            </NavLink>
+                        </div>
                     </div>
                 </div>
             </div>
