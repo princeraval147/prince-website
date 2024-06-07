@@ -1,4 +1,5 @@
 import React from 'react'
+import '../index.css'
 
 const Home = () => {
 
@@ -6,9 +7,13 @@ const Home = () => {
 
     return (
         <>
-            <div id='Home' className="mx-auto w-full max-w-7xl">
-                <aside className="relative overflow-hidden text-black rounded-lg border border-red-900 sm:mx-16 mx-2 sm:py-16">
-                    <div className="relative z-10 max-w-screen-xl px-4  pb-20 pt-10 sm:py-24 mx-auto sm:px-6 lg:px-8">
+
+            <div className="mx-auto w-full max-w-7xl">
+                <aside id='Home' className="relative overflow-hidden text-black rounded-lg sm:mx-16 mx-2 sm:py-16">
+                    <div id="Img" className="absolute inset-0 w-full sm:my-20 sm:pt-1 pt-12 h-full ">
+                        <img className="w-96" src="https://i.ibb.co/5BCcDYB/Remote2.png" alt="image1" />
+                    </div>
+                    <div id='HomeText' className="relative z-10 max-w-screen-xl px-4 pb-20 pt-10 sm:py-24 mx-auto sm:px-6 lg:px-8">
                         <div className="max-w-xl sm:mt-1 mt-80 space-y-8 text-center sm:text-right sm:ml-auto">
                             <h2 className="text-4xl font-bold sm:text-5xl">
                                 Hello, What's Up
@@ -18,9 +23,6 @@ const Home = () => {
                                 localStorage.getItem('Login') === null ? <h1 className='text-4xl'>Welcome To Our Website</h1> : <h1 className='text-4xl'>Welcome {userName.Name}</h1>
                             }
                         </div>
-                    </div>
-                    <div className="absolute inset-0 w-full sm:my-20 sm:pt-1 pt-12 h-full ">
-                        <img className="w-96" src="https://i.ibb.co/5BCcDYB/Remote2.png" alt="image1" />
                     </div>
                 </aside>
 
