@@ -51,7 +51,8 @@ const Footer = () => {
                                     </li>
                                     <li>
                                         <Link
-                                            to="https://www.linkedin.com/in/prince-raval-718729249/" className="hover:underline"
+                                            to="https://www.linkedin.com"
+                                            className="hover:underline"
                                             target='_blank'
                                         >
                                             Linkdin
