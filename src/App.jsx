@@ -12,7 +12,7 @@ import Github, { githubInfoLoader } from "./components/Github"
 
 const App = () => {
   return (
-    <>
+    <div className="select-none">
       <Header />
       {/* <Routes>
         <Route path='' element={<Home />} />
@@ -28,7 +28,7 @@ const App = () => {
       </Routes> */}
       <Outlet />
       <Footer />
-    </>
+    </div>
   )
 }
 
