@@ -67,7 +67,7 @@ const Contact = () => {
                                         />
                                     </svg>
                                     <div className="ml-4 text-md tracking-wide font-semibold">
-                                        +91 9879294083
+                                        +91 98792 94083
                                     </div>
                                 </div>
 

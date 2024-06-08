@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { Link, NavLink, useNavigate } from 'react-router-dom'
-import { Navigate } from 'react-router-dom';
 
 const Header = () => {
 
