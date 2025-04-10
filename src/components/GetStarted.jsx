@@ -66,6 +66,7 @@ const GetStarted = () => {
                                 className="bg-gray-50 block border border-grey-light w-full p-3 rounded mb-4 focus:border-orange-500 focus:outline-none"
                                 name="Pass"
                                 placeholder="Password" />
+
                             <input
                                 onChange={e => setInput({
                                     ...input,
@@ -82,7 +83,9 @@ const GetStarted = () => {
                             <button
                                 type="submit"
                                 className="text-white bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none"
-                            >Create Account</button>
+                            >
+                                Create Account
+                            </button>
                         </form>
 
                         <div className="text-center text-sm text-grey-dark mt-4">
@@ -91,7 +94,7 @@ const GetStarted = () => {
                         </div>
                         <div className="text-grey-dark mt-6">
                             Already have an account?
-                            <NavLink className="font-medium text-primary-600 hover:underline dark:text-primary-500 px-2" to="/login">
+                            <NavLink to="/login" className="font-medium text-primary-600 hover:underline dark:text-primary-500 px-2">
                                 Log in
                             </NavLink>
                         </div>
